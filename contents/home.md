@@ -8,8 +8,10 @@ I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digital Te
 
 #### Education  
 **Wuhan University**, Bachelor of Spatial Informatics and Digital Technology (Computer Science) (2023 – 2027)  
-• GPA: 3.81/4
-• Ranking: 5/30
+- GPA: 3.81/4
+- Ranking: 5/30
 
 #### Research Interests  
-Agricultural Remote Sensing, Space Debris, Surface Subsidence.
+- Agricultural Remote Sensing
+- Space Debris
+- Surface Subsidence.
