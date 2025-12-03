@@ -14,4 +14,5 @@ Bachelor, Spatial Informatics and Digital Technology (Computer Science), **Wuhan
 #### Research Interests  
 - Agricultural Remote Sensing
 - Space Debris
-- Surface Subsidence.
+- Surface Subsidence
+- China's Patent Cooperation Network
