@@ -1,6 +1,6 @@
 [![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
 
-I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digital Technology at School of Remote Sensing and Information Engineering, Wuhan University, China.
+I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digitalized Technology at School of Remote Sensing and Information Engineering, Wuhan University, China.
 
 #### Email  
 <code>dingyichen@whu.edu.cn</code>  
