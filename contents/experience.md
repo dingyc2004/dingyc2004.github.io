@@ -1,5 +1,5 @@
 ### **Public Institution Intern**  
-**August 2024 – September 2025 | Weihai Institute of Land-Sea Integrated Geological Resources and Environment Research**  
+**August 2024 – September 2024 | Weihai Institute of Land-Sea Integrated Geological Resources and Environment Research**  
 
 Worked on the development and optimization of ……
 
