@@ -16,3 +16,4 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - Space Debris
 - Surface Subsidence
 - China's Urban Patent Cooperation Network
+- Transportation Flow
