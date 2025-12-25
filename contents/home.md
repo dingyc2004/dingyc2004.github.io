@@ -1,4 +1,4 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![Yichen Ding](https://img.shields.io/badge/YichenDing-github-blue?logo=github)](https://github.com/dingyc2004)
 
 I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digitalized Technology at School of Remote Sensing and Information Engineering, Wuhan University, China.
 
