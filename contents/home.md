@@ -7,7 +7,7 @@ I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digitalize
 <code>dingyc2004@gmail.com</code>
 
 #### Education  
-Bachelor, Spatial Informatics and Digital Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
+Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
 - GPA: 3.81/4
 - Ranking: 5/30
 
@@ -15,4 +15,4 @@ Bachelor, Spatial Informatics and Digital Technology (Experimental Class), **Wuh
 - Agricultural Remote Sensing
 - Space Debris
 - Surface Subsidence
-- China's Patent Cooperation Network
+- China's Urban Patent Cooperation Network
