@@ -15,5 +15,5 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - **Agricultural Remote Sensing** (guided by professor Zhaocong Wu, doctor Keyi Rao, Kexin Wang, Ruixin Fang, Zhengcan Li, master Shixin Dong; cooperated with Meiling Wang and Yuanyuan Chen)
 - **Space Debris** (guided by institutor Peng Wang and doctor Keyi Rao)
 - **Surface Subsidence** (guided by institutor Xie Hu and doctor Yongxuan Ran)
-- **China's Urban Patent** Cooperation Network (guided by professor Yangge Tian; cooperated with Chenyu Zhang)
+- **China's Urban Patent Cooperation Network** (guided by professor Yangge Tian; cooperated with Chenyu Zhang)
 - **Transportation Flow** (guided by professor Luliang Tang and doctor Hongyu Shi)
