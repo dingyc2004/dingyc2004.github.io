@@ -21,6 +21,6 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - **Traffic Geography**
 
 #### Friends
-**Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
-**M.S.** Shixin Dong and Meiling Wang.
-**B.S. & B.E.** Yuanyuan Chen, Chenyu Zhang, Jiatai Zhou.
+- **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
+- **M.S.** Shixin Dong and Meiling Wang.
+- **B.S. & B.E.** Yuanyuan Chen, Chenyu Zhang and Jiatai Zhou.
