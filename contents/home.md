@@ -1,6 +1,6 @@
 [![Yichen Ding](https://img.shields.io/badge/YichenDing-github-blue?logo=github)](https://github.com/dingyc2004)
 
-I'm currently pursuing a Bachelor's degree in Spatial Informatics and Digitalized Technology at School of Remote Sensing and Information Engineering, Wuhan University, China.
+I am a junior student at School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics and Digitalized Technology (Experimental Class). I am currently seeking possible opportunities to pursue a direct doctoral or master's degree.
 
 #### Email  
 <code>dingyichen@whu.edu.cn</code>  
