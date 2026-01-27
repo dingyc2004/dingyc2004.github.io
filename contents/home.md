@@ -8,19 +8,25 @@ I am a junior student at School of Remote Sensing and Information Engineering, W
 
 #### Education  
 Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
-- **GPA**: 3.81/4
-- **Ranking**: expected to be 5/30
-- **Main courses (>85)**: Analysis and Mining of Spatiotemporal Data (), Processing and Organization of Spatiotemporal Data (), GNSS (), High-performance Computing Technology (), Climate Change (), Geology and Geomorphology (), Physical Geography (), Computer Graphics (), Carbon Accounting and Carbon Management (), Internet of Things(), Commercial time-space information software platform (), Population, Resources, Environment and Sustainable Development (), Selected Topics of Remote Sensing and Engineering (), Software Engineering (), Remote Sensing Spatial Information Foundation Training Course (), Data Structures and Algorithms (), Local-based Service (), Spatial Information Sensing and Application (), Tourism Planning ().
-- **Other interests**: Art of Chorus (97), The Historical Styles and Aesthetics of Popular Music (97), Artistic Practice (96), Vocal Music Performance II (94), Vocal Music Performance I (90), Basic Vocal Training II (92), Appreciation of World Bridge Architecture Art (91), Urban Reading (93), Traveling Life and Parasitic Diseases (91).
+- **GPA**: 3.8/4
+- **Ranking**: 5/30
+- **Main courses of computer science**: Analysis and Mining of Spatiotemporal Data; Processing and Organization of Spatiotemporal Data; High-performance Computing Technology; Computer Graphics; Internet of Things; Commercial time-space information software platform; Frontier Technologies of Artificial Intelligence; Database System; Software Engineering; Data Structures and Algorithms; Operating System, C++.
+- **Main courses of Remote Sensing & GIS**: GNSS, Remote Sensing, Location-based Service, Spatial Information Sensing and Application, Selected Topics of Remote Sensing and Engineering.
+- **Main courses of Geography**: Quantitative Geography; Physical Geography; Climate and Climate Change; Geology and Geomorphology; Carbon Accounting and Carbon Management; Tourism Planning; Population, Resources, Environment and Sustainable Development; Urban Reading.
+- **Main courses of Other interests**: Art of Chorus; The Historical Styles and Aesthetics of Popular Music; Artistic Practice; Vocal Music Performance; Appreciation of World Bridge Architecture Art; Traveling Life and Parasitic Diseases.
+
+#### Skills
+- **Programming language**: C++; Python; MATLAB.
+- **Software & Platform**: ArcGIS; QGIS; Google Earth Engine; Agisoft Metashape; Supermap.
+- **Other Skills**: front end and back end; OpenGL; parallel computing; software engineering; MongoDB; PostGIS; Spark; Hadoop.
 
 #### Research Interests  
-- **Agricultural Remote Sensing**
-- **Space Debris**
-- **Surface Subsidence**
-- **China's Urban Patent Cooperation Network**
-- **Traffic Geography**
+- **Remote Sensing & GIS**
+- **Quantitative Geography & Spatio-temporal Data Mining**
+- **Traffic**
 
-#### Friends
+#### Advisers & Friends
+- **Adviser** 
 - **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
 - **Master** Shixin Dong and Meiling Wang.
-- **Bachelor** Yuanyuan Chen, Chenyu Zhang and Jiatai Zhou.
+- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang and Jiatai Zhou.
