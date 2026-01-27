@@ -7,3 +7,13 @@ Worked on the development and optimization of ……
 - Developed and optimized……
 
 ---
+
+### **Practice of basic knowledge of remote sensing spatial information （遥感空间信息基础实训）**
+**June 2024 - July 2024 | School of Remote Sensing and Information Engineering （武汉大学遥感信息工程学院）**
+
+Worked on the development and optimization of ……
+
+#### Key Contributions:  
+- Developed and optimized……
+
+---
