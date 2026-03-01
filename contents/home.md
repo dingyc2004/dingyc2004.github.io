@@ -8,12 +8,12 @@ I am a junior student at School of Remote Sensing and Information Engineering, W
 
 #### Education  
 Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
-- **GPA**: 3.8/4
+- **Average Score**: 90.64/100
 - **Ranking**: 5/30
-- **Main courses of computer science**: Analysis and Mining of Spatiotemporal Data; Processing and Organization of Spatiotemporal Data; High-performance Computing Technology; Computer Graphics; Internet of Things; Commercial time-space information software platform; Frontier Technologies of Artificial Intelligence; Database System; Software Engineering; Data Structures and Algorithms; Operating System, C++.
+- **Main courses of computer science**: Frontier Technologies of Artificial Intelligence; Analysis and Mining of Spatiotemporal Data; Processing and Organization of Spatiotemporal Data; High-performance Computing Technology; Computer Graphics; Internet of Things; Commercial time-space information software platform;  Database System; Software Engineering; Data Structures and Algorithms; Operating System, C++.
 - **Main courses of Remote Sensing & GIS**: GNSS, Remote Sensing, Location-based Service, Spatial Information Sensing and Application, Selected Topics of Remote Sensing and Engineering.
 - **Main courses of Geography**: Quantitative Geography; Physical Geography; Climate and Climate Change; Geology and Geomorphology; Carbon Accounting and Carbon Management; Tourism Planning; Population, Resources, Environment and Sustainable Development; Urban Reading.
-- **Main courses of Other interests**: Art of Chorus; The Historical Styles and Aesthetics of Popular Music; Artistic Practice; Vocal Music Performance; Appreciation of World Bridge Architecture Art; Traveling Life and Parasitic Diseases.
+- **Other interests**: Art of Chorus; The Historical Styles and Aesthetics of Popular Music; Artistic Practice; Vocal Music Performance; Appreciation of World Bridge Architecture Art; Traveling Life and Parasitic Diseases.
 
 #### Skills
 - **Programming language**: C++; Python; MATLAB.
@@ -21,12 +21,13 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - **Other Skills**: front end and back end; OpenGL; parallel computing; software engineering; MongoDB; PostGIS; Spark; Hadoop.
 
 #### Research Interests  
+- **Agriculture**
 - **Remote Sensing & GIS**
 - **Quantitative Geography & Spatio-temporal Data Mining**
 - **Traffic**
 
 #### Advisers & Friends
-- **Adviser** 
+- **Adviser** Zhaocong wu, Peng Wang
 - **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
 - **Master** Shixin Dong and Meiling Wang.
 - **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang and Jiatai Zhou.
