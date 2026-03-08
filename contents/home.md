@@ -26,7 +26,7 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - **Quantitative Geography & Spatio-temporal Data Mining**
 - **Transportation**
 
-#### Advisers & Friends
+#### Advisors & Friends
 - **Advisor** Zhaocong Wu, Peng Wang, Luliang Tang, Xie Hu and Yangge Tian.
 - **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
 - **Master** Shixin Dong and Meiling Wang.
