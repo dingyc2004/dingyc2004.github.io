@@ -24,10 +24,10 @@ Bachelor, Spatial Informatics and Digitalized Technology (Experimental Class), *
 - **Agriculture**
 - **Remote Sensing & GIS**
 - **Quantitative Geography & Spatio-temporal Data Mining**
-- **Traffic**
+- **Transportation**
 
 #### Advisers & Friends
-- **Adviser** Zhaocong wu, Peng Wang
+- **Advisor** Zhaocong Wu, Peng Wang, Luliang Tang, Xie Hu and Yangge Tian.
 - **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
 - **Master** Shixin Dong and Meiling Wang.
-- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang and Jiatai Zhou.
+- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou and Yifei You.
