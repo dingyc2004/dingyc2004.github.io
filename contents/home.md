@@ -26,8 +26,13 @@ I am a junior student at the School of Remote Sensing and Information Engineerin
 - **Quantitative Geography & Spatio-temporal Data Mining**
 - **Transportation**
 
-#### Advisors & Friends
+#### Research Friends
 - **Advisor** Zhaocong Wu, Peng Wang, Luliang Tang, Xie Hu, Yangge Tian and Chun Yin.
-- **Ph.D** Keyi Rao, Zhengcan Li, Yongxuan Ran, Feng Lin and Hongyu Shi.
+- **Ph.D** Keyi Rao, Zhengcan Li, Hongyu Shi, Heng Qi, Yongxuan Ran and Feng Lin.
 - **Master** Shixin Dong and Meiling Wang.
-- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou and Yifei You.
+- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou, Shuhao Cui, Jiale Wang and Han Jiang.
+
+#### Clubs & Hobbies
+- **Solfa Acappella**
+- **Tiankong Choir**
+- **Traveling & Mountain Climbing**
