@@ -8,8 +8,9 @@ I am a junior student at the School of Remote Sensing and Information Engineerin
 
 #### Education  
 **B.E.**, Spatial Informatics & Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
+- **GPA**: 3.86/4
 - **Average Score**: 90.64/100
-- **Ranking**: 5/30
+- **Ranking**: 3/30
 - **Main courses of Computer Science**: Frontier Technologies of Artificial Intelligence; Analysis and Mining of Spatiotemporal Data; Processing and Organization of Spatiotemporal Data; High-performance Computing Technology; Computer Graphics; Internet of Things; Commercial time-space information software platform;  Database System; Software Engineering; Data Structures and Algorithms; Operating System, C++.
 - **Main courses of Remote Sensing & GIS**: GNSS, Remote Sensing, Location-based Service, Spatial Information Sensing and Application, Selected Topics of Remote Sensing and Engineering.
 - **Main courses of Geography**: Quantitative Geography; Physical Geography; Climate and Climate Change; Geology and Geomorphology; Carbon Accounting and Carbon Management; Tourism Planning; Population, Resources, Environment and Sustainable Development; Urban Reading.
@@ -21,16 +22,17 @@ I am a junior student at the School of Remote Sensing and Information Engineerin
 - **Other Skills**: front end and back end; OpenGL; parallel computing; software engineering; MongoDB; PostGIS; Spark; Hadoop.
 
 #### Research Interests  
-- **Agriculture**
 - **Remote Sensing & GIS**
-- **Quantitative Geography & Spatio-temporal Data Mining**
 - **Transportation**
+- **Agriculture**
+- **Quantitative Geography & Spatio-temporal Data Mining**
+
 
 #### Research Friends
 - **Advisor** Zhaocong Wu, Peng Wang, Luliang Tang, Xie Hu, Yangge Tian and Chun Yin.
 - **Ph.D** Keyi Rao, Zhengcan Li, Hongyu Shi, Heng Qi, Yongxuan Ran and Feng Lin.
 - **Master** Shixin Dong and Meiling Wang.
-- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou, Shuhao Cui, Jiale Wang and Han Jiang.
+- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou, Shuhao Cui, Jiale Wang, Han Jiang, Yuhan Miao and Minhua Dong.
 
 #### Clubs & Hobbies
 - **Solfa Acappella**
