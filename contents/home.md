@@ -1,10 +1,13 @@
 [![Yichen Ding](https://img.shields.io/badge/YichenDing-github-blue?logo=github)](https://github.com/dingyc2004)
 
-I am a junior student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (Experimental Class). I am currently seeking possible opportunities to pursue a direct doctoral or master's degree.
+I am a junior student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (**Experimental Class**). I am currently seeking possible opportunities to pursue a direct doctoral or master's degree.
 
 #### Email  
-<code>dingyichen@whu.edu.cn</code>  
-<code>dingyc2004@gmail.com</code>
+<code>dingyichen@whu.edu.cn</code> / <code>dingyc2004@gmail.com</code>
+#### Other social media
+- Facebook: https://www.facebook.com/profile.php?id=61578992465570
+- Instagram: https://www.instagram.com/ding.yc2004/
+- Linkedin: https://www.linkedin.com/in/%E7%86%A0%E6%99%A8-%E4%B8%81-5b7646393/
 
 #### Education  
 **B.E.**, Spatial Informatics & Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
