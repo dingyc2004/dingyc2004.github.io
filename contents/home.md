@@ -26,16 +26,10 @@ I am a junior student at the School of Remote Sensing and Information Engineerin
 
 #### Research Interests  
 - **Remote Sensing & GIS**
-- **Transportation**
+- **Transportation and Energy**
 - **Agriculture**
 - **Quantitative Geography & Spatio-temporal Data Mining**
 
-
-#### Research Friends
-- **Advisor** Zhaocong Wu, Peng Wang, Luliang Tang, Xie Hu, Yangge Tian and Chun Yin.
-- **Ph.D** Keyi Rao, Zhengcan Li, Hongyu Shi, Heng Qi, Yongxuan Ran and Feng Lin.
-- **Master** Shixin Dong and Meiling Wang.
-- **Bachelor** Yuanyuan Chen, Chenyu Zhang, Haohao Liang, Jiatai Zhou, Shuhao Cui, Jiale Wang, Han Jiang, Yuhan Miao and Minhua Dong.
 
 #### Clubs & Hobbies
 - **Solfa Acappella**

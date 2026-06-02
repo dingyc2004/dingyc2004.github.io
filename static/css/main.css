@@ -1,29 +1,47 @@
-@import "./styles.css";
-
-
 :root{
-    --h-title-color:#3948d2;
+    --accent: #3948d2;
+    --accent-light: #eef1ff;
+    --accent-dark: #2838b0;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a5a;
+    --text-muted: #6c6c80;
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --card-hover-shadow: 0 10px 30px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.04);
+    --border-light: #e8e8ef;
+}
+
+/* ===== GLOBAL TYPOGRAPHY ===== */
+body {
+    font-family: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
-    border-bottom: solid 2px var(--bs-blue);
+    border-bottom: solid 2px var(--accent);
     z-index: 10000;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.92) !important;
 }
 
 .bg-bottom {
-    background-color: var(--h-title-color);
+    background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
 }
 
+/* ===== TOP HERO SECTION ===== */
 .top-section {
     position: relative;
     padding: 10rem 0;
     background-position: center;
     background-size: cover;
-    height: 25rem;
+    height: 28rem;
 }
 
 .top-section h2 {
     font-weight: 400;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .top-section .top-section-content {
@@ -38,33 +56,602 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(20,20,60,0.45) 100%);
+}
+
+/* ===== SECTION HEADERS ===== */
+section header {
+    margin-bottom: 2rem;
 }
 
 section header h2{
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    color: var(--h-title-color);
-    font-size: 2.3rem;
-    line-height: 4rem;
+    font-family: "Kanit", "Inter", sans-serif !important;
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
 }
 
-section .main-body{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 2.4rem;
+section header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), rgba(57,72,210,0.15));
+    border-radius: 2px;
 }
 
+section header h2 i {
+    font-size: 1.8rem;
+    color: var(--accent);
+    opacity: 0.85;
+}
 
+/* Section background alternation */
 .bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+    background: #fafbfe !important;
 }
 
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: #f3f4f9 !important;
 }
 
+/* ===== MAIN BODY TEXT ===== */
+section .main-body{
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: var(--text-primary);
+}
 
+section .main-body a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(57,72,210,0.2);
+    transition: border-color 0.2s, color 0.2s;
+}
 
+section .main-body a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent-dark);
+}
+
+/* ================================================
+   HOME SECTION — layered information architecture
+   ================================================ */
+
+#home .main-body {
+    font-size: 1.05rem;
+    line-height: 2rem;
+}
+
+/* Intro paragraph — larger for prominence */
+#home .main-body > p:nth-of-type(2) {
+    font-size: 1.15rem;
+    line-height: 2.1rem;
+}
+
+/* Sub-section headings — strong left-accent anchors */
+#home .main-body h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin: 2.2rem 0 0.9rem 0;
+    padding-left: 0.85rem;
+    border-left: 3px solid var(--accent);
+    line-height: 1.2rem;
+}
+
+#home .main-body h4:first-of-type {
+    margin-top: 1rem;
+}
+
+/* All lists — clean, card-like items */
+#home .main-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#home .main-body ul li {
+    padding: 0.5rem 0.85rem;
+    margin-bottom: 0.25rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+#home .main-body ul li:hover {
+    background: #fff;
+    border-color: var(--border-light);
+}
+
+/* Keep home lists visually consistent for quick scanning */
+#home .main-body ul li {
+    background: #fff;
+    border-color: var(--border-light);
+    font-weight: 500;
+}
+
+#home .main-body ul li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 0.55rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+/* Email codes */
+#home .main-body code {
+    background: #fff;
+    color: var(--accent);
+    padding: 0.25rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid var(--border-light);
+    white-space: nowrap;
+}
+
+/* Bold labels in home lists */
+#home .main-body ul li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+#home .main-body strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.academic-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 0.4rem 0 1rem;
+}
+
+.academic-metric {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+.academic-metric span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.academic-metric strong {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--accent-dark);
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+}
+
+.course-panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin: 1.1rem 0 1.7rem;
+}
+
+.course-group {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.course-group:nth-child(n+3) {
+    grid-column: 1 / -1;
+}
+
+.course-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--border-light);
+    background: linear-gradient(90deg, #f7f8ff 0%, #ffffff 100%);
+}
+
+.course-group-header h5 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.course-group-header span {
+    flex: 0 0 auto;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.course-table {
+    display: grid;
+}
+
+.course-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 4.5rem;
+    align-items: center;
+    gap: 0.7rem;
+    min-height: 2.6rem;
+    padding: 0.45rem 1rem;
+    border-bottom: 1px solid #f0f1f6;
+}
+
+.course-row:last-child {
+    border-bottom: none;
+}
+
+.course-row-head {
+    min-height: 2.25rem;
+    background: #fbfbfd;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.course-name {
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    line-height: 1.35rem;
+}
+
+.course-score {
+    justify-self: end;
+    min-width: 3rem;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    background: #edf8f1;
+    color: #1d6b3b;
+    border: 1px solid #cdebd8;
+    font-size: 0.85rem;
+    font-weight: 800;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.course-row-missing-grade .course-score {
+    background: #f6f6fa;
+    color: var(--text-muted);
+    border-color: #e7e7ef;
+}
+
+/* ===== AWARDS — badge cards ===== */
+#awards .main-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#awards .main-body ul li {
+    position: relative;
+    padding: 0.9rem 1rem 0.9rem 2.5rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    font-weight: 500;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#awards .main-body ul li:hover {
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-1px);
+}
+
+#awards .main-body ul li::before {
+    content: "\F26B";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0.9rem;
+    top: 0.9rem;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+/* ===== PROJECTS — card layout ===== */
+#projects .main-body h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    padding: 1.2rem 1.3rem;
+    margin: 1rem 0 0 0;
+    line-height: 1.5rem;
+    cursor: default;
+    transition: box-shadow 0.25s, border-left-color 0.25s;
+}
+
+#projects .main-body h3:first-child {
+    margin-top: 0;
+}
+
+#projects .main-body h3:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    border-left-color: var(--accent-dark);
+}
+
+#projects .main-body p,
+#projects .main-body h4 {
+    background: #fff;
+    margin: 0;
+    border-left: 1px solid var(--border-light);
+    border-right: 1px solid var(--border-light);
+    padding: 0.3rem 1.3rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+#projects .main-body h4 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding-top: 0.7rem;
+    padding-bottom: 0.15rem;
+}
+
+#projects .main-body ul {
+    background: #fff;
+    margin: 0 0 0.8rem 0;
+    padding: 0.2rem 1.3rem 0.9rem 2.5rem;
+    list-style: none;
+    border: 1px solid var(--border-light);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+#projects .main-body ul li {
+    position: relative;
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+#projects .main-body ul li::before {
+    content: "";
+    position: absolute;
+    left: -1.2rem;
+    top: 0.7rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.5;
+}
+
+#projects .main-body hr {
+    display: none;
+}
+
+/* ===== EXPERIENCE — card layout ===== */
+#experience .main-body h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    padding: 1.2rem 1.3rem;
+    margin: 1rem 0 0 0;
+    line-height: 1.5rem;
+}
+
+#experience .main-body h3:first-child {
+    margin-top: 0;
+}
+
+#experience .main-body p,
+#experience .main-body h4 {
+    background: #fff;
+    margin: 0;
+    border-left: 1px solid var(--border-light);
+    border-right: 1px solid var(--border-light);
+    padding: 0.3rem 1.3rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+#experience .main-body h4 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding-top: 0.8rem;
+    padding-bottom: 0.15rem;
+}
+
+#experience .main-body ul {
+    background: #fff;
+    margin: 0 0 0.5rem 0;
+    padding: 0.2rem 1.3rem 0.9rem 2.5rem;
+    list-style: none;
+    border: 1px solid var(--border-light);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+#experience .main-body ul li {
+    position: relative;
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+#experience .main-body ul li::before {
+    content: "";
+    position: absolute;
+    left: -1.2rem;
+    top: 0.7rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.45;
+}
+
+#experience .main-body hr {
+    display: none;
+}
+
+/* ===== PUBLICATIONS — badge cards ===== */
+#publications .main-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#publications .main-body ul li {
+    position: relative;
+    padding: 0.9rem 1rem 0.9rem 2.5rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    font-weight: 500;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#publications .main-body ul li:hover {
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-1px);
+}
+
+#publications .main-body ul li::before {
+    content: "\F3A7";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0.9rem;
+    top: 0.9rem;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+/* ===== AVATAR ===== */
+#avatar {
+    position: relative;
+    height: 0;
+    top:min(-65px,max(-100px,calc(-1*100vw/12)));
+    max-width: 55em;
+    margin: 0 1.5rem 0 0;
+    float: right;
+    z-index: 9000;
+}
+
+#avatar img {
+    height: max(130px,min(200px,calc(100vw/6)));
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border: 3px solid #fff;
+    transition: transform 0.3s;
+}
+
+#avatar img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== NAVIGATION ===== */
+.navbar-brand {
+    font-family: "Kanit", "Inter", sans-serif;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em;
+    color: var(--accent) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0.15rem;
+    background: #f2f4fb;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+}
+
+.language-option {
+    min-width: 2.7rem;
+    min-height: 2rem;
+    padding: 0 0.65rem;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.language-option.active {
+    background: #fff;
+    color: var(--accent-dark);
+    box-shadow: var(--card-shadow);
+}
+
+.language-option:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ===== FOOTER ===== */
+footer a {
+    color: rgba(255,255,255,0.8) !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #fff !important;
+}
+
+/* ===== MISC ===== */
 .on-top {
     position: relative;
     z-index: 10000;
@@ -87,26 +674,73 @@ section .main-body{
     background: rgba(0, 0, 0, 0.4);
 }
 
-
-#avatar {
-    position: relative;
-    height: 0;
-    top:min(-65px,max(-100px,calc(-1*100vw/12)));
-    max-width: 55em;
-    margin: 0 1.5rem 0 0;
-    float: right;
-    z-index: 9000;
-}
-
-#avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 991px) {
     #avatar {
         margin: 0;
     }
+
+    section header h2 {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    #projects .main-body h3,
+    #experience .main-body h3 {
+        font-size: 1.05rem;
+        padding: 1rem 1.1rem;
+    }
+
+    #projects .main-body p,
+    #projects .main-body h4,
+    #experience .main-body p,
+    #experience .main-body h4 {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+
+    #projects .main-body ul,
+    #experience .main-body ul {
+        padding-left: 2rem;
+        padding-right: 1.1rem;
+    }
+
+    .course-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .course-group:nth-child(n+3) {
+        grid-column: auto;
+    }
+
+    .language-switch {
+        margin: 0 0 1rem;
+    }
 }
 
+@media screen and (max-width: 576px) {
+    .top-section h2 {
+        font-size: 2rem !important;
+    }
 
+    section .main-body {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .academic-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .course-group-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .course-row {
+        grid-template-columns: minmax(0, 1fr) 3.8rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+}
