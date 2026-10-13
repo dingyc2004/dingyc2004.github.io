@@ -5,19 +5,22 @@ I am a junior student at the School of Remote Sensing and Information Engineerin
 #### Email  
 <code>dingyichen@whu.edu.cn</code> / <code>dingyc2004@gmail.com</code>
 #### Other social media
-- Facebook: https://www.facebook.com/profile.php?id=61578992465570
-- Instagram: https://www.instagram.com/ding.yc2004/
-- Linkedin: https://www.linkedin.com/in/%E7%86%A0%E6%99%A8-%E4%B8%81-5b7646393/
+<div class="social-media-links">
+  <a href="https://www.facebook.com/profile.php?id=61578992465570" target="_blank" rel="noopener" title="Facebook" class="social-icon-link">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/ding.yc2004/" target="_blank" rel="noopener" title="Instagram" class="social-icon-link">
+    <i class="bi bi-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/%E7%86%A0%E6%99%A8-%E4%B8%81-5b7646393/" target="_blank" rel="noopener" title="LinkedIn" class="social-icon-link">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
 
-#### Education  
-**B.E.**, Spatial Informatics & Digitalized Technology (Experimental Class), **Wuhan University**,  (2023 – 2027)  
-- **GPA**: 3.86/4
-- **Average Score**: 90.64/100
-- **Ranking**: 3/30
-- **Main courses of Computer Science**: Frontier Technologies of Artificial Intelligence; Analysis and Mining of Spatiotemporal Data; Processing and Organization of Spatiotemporal Data; High-performance Computing Technology; Computer Graphics; Internet of Things; Commercial time-space information software platform;  Database System; Software Engineering; Data Structures and Algorithms; Operating System, C++.
-- **Main courses of Remote Sensing & GIS**: GNSS, Remote Sensing, Location-based Service, Spatial Information Sensing and Application, Selected Topics of Remote Sensing and Engineering.
-- **Main courses of Geography**: Quantitative Geography; Physical Geography; Climate and Climate Change; Geology and Geomorphology; Carbon Accounting and Carbon Management; Tourism Planning; Population, Resources, Environment and Sustainable Development; Urban Reading.
-- **Other interests**: Art of Chorus; The Historical Styles and Aesthetics of Popular Music; Artistic Practice; Vocal Music Performance; Appreciation of World Bridge Architecture Art; Traveling Life and Parasitic Diseases.
+#### Education
+- **B.E.**, Spatial Informatics & Digitalized Technology (Experimental Class), **Wuhan University**, (2023 – 2027) <a href="education.html?type=bachelor" class="education-detail-link">(Click here for details)</a>
+- **M.S.**, TBD, (2027 – Future) <a href="education.html?type=master" class="education-detail-link">(Pending)</a>
+- **D.E.**, TBD, (Future) <a href="education.html?type=doctor" class="education-detail-link">(Pending)</a>
 
 #### Skills
 - **Programming language**: C++; Python; MATLAB.

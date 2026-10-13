@@ -58,7 +58,48 @@ git push
 ```
 
 
-### 3. 访问你的网站 | Enjoy
+### 3. 本地预览 | Local Preview
+
+由于这是纯静态网站，不需要构建步骤。只需在项目根目录启动一个本地 HTTP 服务器即可预览。
+
+Since this is a static website, no build step is needed. Just start a local HTTP server in the project root.
+
+**方法一：Python（推荐，Windows/macOS/Linux 均适用）**
+
+```bash
+# Python 3
+python -m http.server 8000
+```
+
+**方法二：Node.js（需要安装 Node.js）**
+
+```bash
+npx serve .
+```
+
+启动后在浏览器访问 `http://localhost:8000` 即可查看。修改 `contents/` 下的 markdown 文件后刷新页面即可看到效果。
+
+
+### 4. 推送到 GitHub | Push to GitHub
+
+```bash
+# 查看修改状态
+git status
+
+# 暂存所有修改
+git add -A
+
+# 提交（请根据实际修改内容编写 commit message）
+git commit -m "更新社交媒体图标和教育部学子页面"
+
+# 推送到远程仓库
+git push
+```
+
+推送后等待 1-2 分钟，GitHub Pages 会自动部署。部署完成后访问 `https://<用户名>.github.io` 即可看到更新。
+
+
+### 5. 访问你的网站 | Enjoy
 
 打开浏览器，访问 https://<用户名>.github.io，即可查看你的个人主页
 

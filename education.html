@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Education Details" />
+    <meta name="author" content="dingyc2004" />
+    <title id="title">Education</title>
+
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <style>
+        .education-page {
+            max-width: 55em;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .education-page .main-body {
+            font-size: 1.05rem;
+            font-weight: 400;
+            line-height: 1.9rem;
+            color: #1a1a2e;
+        }
+        .education-page .main-body h4 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #2838b0;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            margin: 2.2rem 0 0.9rem 0;
+            padding-left: 0.85rem;
+            border-left: 3px solid #3948d2;
+            line-height: 1.2rem;
+        }
+        .education-page .main-body ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .education-page .main-body ul li {
+            padding: 0.5rem 0.85rem;
+            margin-bottom: 0.25rem;
+            border-radius: 6px;
+            border: 1px solid #e8e8ef;
+            background: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .education-page .main-body ul li::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #3948d2;
+            margin-right: 0.55rem;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+        .education-page .main-body ul li strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+        .education-page .main-body strong {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+        .education-page .main-body a {
+            color: #3948d2;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(57,72,210,0.2);
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .education-page .main-body a:hover {
+            border-bottom-color: #3948d2;
+            color: #2838b0;
+        }
+        .education-placeholder {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #6c6c80;
+        }
+        .education-placeholder i {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+            opacity: 0.4;
+        }
+        .education-placeholder p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        .course-score-grade-a { background: #eef1ff; color: #2838b0; border-color: #d0d5f7; }
+        .course-score-grade-b { background: #e8f4fd; color: #1a6d9f; border-color: #bde0f7; }
+        .course-score-grade-c { background: #edf8f1; color: #1d6b3b; border-color: #cdebd8; }
+        .course-score-grade-d { background: #fef9e7; color: #7d6608; border-color: #f9e79f; }
+        .course-score-grade-e { background: #fdedec; color: #922b21; border-color: #f5b7b1; }
+        .education-nav {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .education-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            background: #fff;
+            color: #4a4a5a;
+            border: 1px solid #e8e8ef;
+            transition: all 0.2s;
+        }
+        .education-nav a.active {
+            background: #3948d2;
+            color: #fff;
+            border-color: #3948d2;
+        }
+        .education-nav a:hover:not(.active) {
+            border-color: #3948d2;
+            color: #3948d2;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html">Yichen Ding</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="index.html"><i class="bi bi-arrow-left"></i> <span data-i18n="nav-back">BACK TO HOME</span></a>
+                    </li>
+                </ul>
+                <div class="language-switch" aria-label="Language switch">
+                    <button class="language-option active" type="button" data-lang="en">EN</button>
+                    <button class="language-option" type="button" data-lang="zh">中文</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg'); height: 16rem; padding: 6rem 0;">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 class="text-white display-3 lh-1 font-alt" id="top-section-bg-text">Education</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5">
+        <div class="container px-5">
+            <div class="education-page">
+                <nav class="education-nav" id="education-nav" aria-label="Degree navigation"></nav>
+                <div class="main-body" id="education-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2">&copy; Yichen Ding 2025-2026. All rights reserved.</div>
+                <a href="https://github.com/dingyc2004">Github</a>
+                <span class="mx-1">&middot;</span>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const languageStorageKey = 'homepage-language';
+        const eduPageText = {
+            en: { 'nav-back': 'BACK TO HOME' },
+            zh: { 'nav-back': '返回首页' }
+        };
+
+        const uiText = {
+            en: {
+                course: 'Course',
+                score: 'Score',
+                courseCount: count => `${count} courses`,
+                summaryLabel: 'Academic summary'
+            },
+            zh: {
+                course: '课程',
+                score: '成绩',
+                courseCount: count => `${count} 门课程`,
+                summaryLabel: '学业概览'
+            }
+        };
+
+        const degreeMeta = {
+            bachelor: {
+                title: { en: 'Bachelor of Engineering', zh: '工学学士' },
+                label: { en: 'B.E.', zh: '学士' },
+                icon: 'bi-mortarboard-fill'
+            },
+            master: {
+                title: { en: 'Master of Science', zh: '理学硕士' },
+                label: { en: 'M.S.', zh: '硕士' },
+                icon: 'bi-book-half'
+            },
+            doctor: {
+                title: { en: 'Doctor of Engineering', zh: '工学博士' },
+                label: { en: 'D.E.', zh: '博士' },
+                icon: 'bi-book-fill'
+            }
+        };
+
+        function getDegreeType() {
+            const params = new URLSearchParams(window.location.search);
+            const type = params.get('type');
+            if (type && degreeMeta[type]) return type;
+            return 'bachelor';
+        }
+
+        let currentType = getDegreeType();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const mainNav = document.body.querySelector('#mainNav');
+            if (mainNav) {
+                new bootstrap.ScrollSpy(document.body, {
+                    target: '#mainNav',
+                    offset: 74,
+                });
+            }
+
+            const navbarToggler = document.body.querySelector('.navbar-toggler');
+            const responsiveNavItems = [].slice.call(
+                document.querySelectorAll('#navbarResponsive .nav-link')
+            );
+            responsiveNavItems.map(function (responsiveNavItem) {
+                responsiveNavItem.addEventListener('click', () => {
+                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                        navbarToggler.click();
+                    }
+                });
+            });
+
+            document.querySelectorAll('.language-option').forEach(button => {
+                button.addEventListener('click', () => setLanguage(button.dataset.lang));
+            });
+
+            marked.use({ mangle: false, headerIds: false });
+            setLanguage(getInitialLanguage());
+        });
+
+        function getInitialLanguage() {
+            const savedLanguage = localStorage.getItem(languageStorageKey);
+            if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'zh')) return savedLanguage;
+            return navigator.language && navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+        }
+
+        function setLanguage(language) {
+            const lang = (language === 'zh') ? 'zh' : 'en';
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+            updatePageTitle(lang);
+            updateLanguageButtons(lang);
+            updateStaticText(lang);
+            renderDegreeNav(lang);
+            loadEducationContent(lang);
+        }
+
+        function updatePageTitle(lang) {
+            const meta = degreeMeta[currentType];
+            document.getElementById('top-section-bg-text').textContent = meta.title[lang];
+            document.getElementById('title').textContent = meta.title[lang];
+        }
+
+        function updateLanguageButtons(language) {
+            document.querySelectorAll('.language-option').forEach(button => {
+                const isActive = button.dataset.lang === language;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        }
+
+        function updateStaticText(language) {
+            const dictionary = eduPageText[language] || eduPageText.en;
+            Object.keys(dictionary).forEach(key => {
+                document.querySelectorAll(`[data-i18n="${key}"]`).forEach(element => {
+                    element.textContent = dictionary[key];
+                });
+            });
+        }
+
+        function renderDegreeNav(lang) {
+            const nav = document.getElementById('education-nav');
+            nav.innerHTML = Object.keys(degreeMeta).map(type => {
+                const meta = degreeMeta[type];
+                const isActive = type === currentType;
+                return `<a href="?type=${type}" class="${isActive ? 'active' : ''}" aria-current="${isActive ? 'page' : 'false'}">
+                    <i class="bi ${meta.icon}"></i> ${meta.label[lang]}
+                </a>`;
+            }).join('');
+        }
+
+        function loadEducationContent(language) {
+            const suffix = language === 'zh' ? '.zh' : '';
+            const url = `contents/education-${currentType}${suffix}.md`;
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok && language !== 'en') {
+                        return fetch(`contents/education-${currentType}.md`);
+                    }
+                    if (!response.ok) {
+                        throw new Error('Content not found');
+                    }
+                    return response;
+                })
+                .then(response => response.text())
+                .then(markdown => {
+                    const html = marked.parse(markdown);
+                    document.getElementById('education-md').innerHTML = html;
+                    if (currentType === 'bachelor') {
+                        enhanceAcademicProfile(language, 'education-md');
+                    }
+                })
+                .then(() => {
+                    if (window.MathJax) {
+                        MathJax.typeset();
+                    }
+                })
+                .catch(error => console.log(error));
+        }
+
+        function enhanceAcademicProfile(language, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            const educationHeading = Array.from(container.querySelectorAll('h4')).find(
+                heading => ['education', '教育经历'].includes(heading.textContent.trim().toLowerCase())
+            );
+            if (!educationHeading) return;
+
+            let educationList = educationHeading.nextElementSibling;
+            while (educationList && educationList.tagName !== 'UL') {
+                educationList = educationList.nextElementSibling;
+            }
+            if (!educationList) return;
+
+            const items = Array.from(educationList.querySelectorAll(':scope > li'));
+            const metricLabels = new Set(['GPA', 'Average Score', 'Ranking', '平均分', '平均成绩', '专业排名']);
+            const courseLabels = {
+                'Main courses of Computer Science': 'Computer Science',
+                'Main courses of Remote Sensing & GIS': 'Remote Sensing & GIS',
+                'Main courses of Geography': 'Geography',
+                'Other interests': 'Other Interests',
+                '计算机科学主修课程': '计算机科学',
+                '遥感与地理信息系统主修课程': '遥感与地理信息系统',
+                '地理学主修课程': '地理学',
+                '其他兴趣课程': '其他兴趣',
+                '计算机类主修课程': '计算机科学',
+                '计算机类课程': '计算机科学',
+                '遥感、地信类主修课程': '遥感与地理信息系统',
+                '地理类主修课程': '地理学',
+                '地理类课程': '地理学',
+                '艺术类课程': '其他兴趣',
+                '遥感与地理信息类课程': '遥感与地理信息',
+                '其它通识课程': '通识课程',
+                '公共课程': '公共课程'
+            };
+            const metrics = [];
+            const courseGroups = [];
+
+            items.forEach(item => {
+                const strong = item.querySelector('strong');
+                if (!strong) return;
+
+                const label = strong.textContent.replace(/\s+/g, ' ').trim().replace(/:$/, '').replace(/：$/, '');
+                const text = item.textContent.replace(/\s+/g, ' ').trim();
+                const value = text.replace(strong.textContent, '').replace(/^[:：]\s*/, '').trim();
+
+                if (metricLabels.has(label)) {
+                    metrics.push({ label, value });
+                    item.remove();
+                    return;
+                }
+
+                if (courseLabels[label]) {
+                    const courses = value
+                        .replace(/[.。]$/, '')
+                        .split(/[;；]/)
+                        .map(course => parseCourse(course))
+                        .filter(course => course.name)
+                        .sort((a, b) => b.score - a.score);
+
+                    if (courses.length) {
+                        courseGroups.push({ title: courseLabels[label], courses });
+                        item.remove();
+                    }
+                }
+            });
+
+            if (metrics.length) {
+                const summary = document.createElement('div');
+                summary.className = 'academic-summary';
+                summary.setAttribute('aria-label', uiText[language].summaryLabel);
+
+                metrics.forEach(metric => {
+                    const card = document.createElement('div');
+                    card.className = 'academic-metric';
+                    card.innerHTML = '<span>' + escapeHtml(metric.label) + '</span><strong>' + escapeHtml(metric.value) + '</strong>';
+                    summary.appendChild(card);
+                });
+
+                educationHeading.insertAdjacentElement('afterend', summary);
+            }
+
+            if (courseGroups.length) {
+                const panel = document.createElement('div');
+                panel.className = 'course-panel';
+
+                courseGroups.forEach(group => {
+                    const groupNode = document.createElement('section');
+                    groupNode.className = 'course-group';
+                    groupNode.innerHTML =
+                        '<div class="course-group-header">' +
+                            '<h5>' + escapeHtml(group.title) + '</h5>' +
+                            '<span>' + escapeHtml(uiText[language].courseCount(group.courses.length)) + '</span>' +
+                        '</div>' +
+                        '<div class="course-table" role="table" aria-label="' + escapeHtml(group.title) + ' courses">' +
+                            '<div class="course-row course-row-head" role="row">' +
+                                '<span role="columnheader">' + escapeHtml(uiText[language].course) + '</span>' +
+                                '<span role="columnheader">' + escapeHtml(uiText[language].score) + '</span>' +
+                            '</div>' +
+                        '</div>';
+
+                    const table = groupNode.querySelector('.course-table');
+                    group.courses.forEach(course => {
+                        const row = document.createElement('div');
+                        const colorClass = course.grade ? gradeClass(course.score) : '';
+                        row.className = 'course-row' + (course.grade ? '' : ' course-row-missing-grade');
+                        row.setAttribute('role', 'row');
+                        row.innerHTML =
+                            '<span class="course-name" role="cell">' + escapeHtml(course.name) + '</span>' +
+                            '<span class="course-score ' + colorClass + '" role="cell">' + escapeHtml(course.grade || '--') + '</span>';
+                        table.appendChild(row);
+                    });
+
+                    panel.appendChild(groupNode);
+                });
+
+                educationList.insertAdjacentElement('afterend', panel);
+            }
+        }
+
+        function parseCourse(rawCourse) {
+            const normalized = rawCourse.replace(/\s+/g, ' ').trim();
+            if (!normalized) return { name: '', grade: '', score: -1 };
+
+            const parenMatch = normalized.match(/^(.+?)\s*[（(]\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)\s*[）)]$/i);
+            if (parenMatch) {
+                const grade = parenMatch[2].trim().replace(/^pass$/i, 'Pass');
+                return { name: parenMatch[1].trim(), grade, score: scoreFromGrade(grade) };
+            }
+
+            const separatorMatch = normalized.match(/^(.+?)\s+(?:-|--|:|：)\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)$/i);
+            if (separatorMatch) {
+                const grade = separatorMatch[2].trim().replace(/^pass$/i, 'Pass');
+                return { name: separatorMatch[1].trim(), grade, score: scoreFromGrade(grade) };
+            }
+
+            return { name: normalized, grade: '', score: -1 };
+        }
+
+        function scoreFromGrade(grade) {
+            if (!grade) return -1;
+            const match = grade.match(/(\d+)(?:\/100)?/);
+            return match ? parseInt(match[1], 10) : -1;
+        }
+
+        function gradeClass(score) {
+            if (score >= 90) return 'course-score-grade-a';
+            if (score >= 85) return 'course-score-grade-b';
+            if (score >= 82) return 'course-score-grade-c';
+            if (score >= 78) return 'course-score-grade-d';
+            if (score >= 75) return 'course-score-grade-e';
+            return '';
+        }
+
+        function escapeHtml(value) {
+            return value
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+    </script>
+</body>
+
+</html>

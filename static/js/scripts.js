@@ -163,20 +163,23 @@ function loadSections(language) {
     })
 }
 
-function enhanceAcademicProfile(language) {
-    const home = document.getElementById('home-md');
-    if (!home) return;
+function enhanceAcademicProfile(language, containerId = 'home-md') {
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-    const educationHeading = Array.from(home.querySelectorAll('h4')).find(
+    const educationHeading = Array.from(container.querySelectorAll('h4')).find(
         heading => ['education', '教育经历'].includes(heading.textContent.trim().toLowerCase())
     );
     if (!educationHeading) return;
 
-    const educationList = educationHeading.nextElementSibling;
-    if (!educationList || educationList.tagName !== 'UL') return;
+    let educationList = educationHeading.nextElementSibling;
+    while (educationList && educationList.tagName !== 'UL') {
+        educationList = educationList.nextElementSibling;
+    }
+    if (!educationList) return;
 
     const items = Array.from(educationList.querySelectorAll(':scope > li'));
-    const metricLabels = new Set(['GPA', 'Average Score', 'Ranking', '平均成绩', '专业排名']);
+    const metricLabels = new Set(['GPA', 'Average Score', 'Ranking', '平均分', '平均成绩', '专业排名']);
     const courseLabels = {
         'Main courses of Computer Science': 'Computer Science',
         'Main courses of Remote Sensing & GIS': 'Remote Sensing & GIS',
@@ -185,7 +188,16 @@ function enhanceAcademicProfile(language) {
         '计算机科学主修课程': '计算机科学',
         '遥感与地理信息系统主修课程': '遥感与地理信息系统',
         '地理学主修课程': '地理学',
-        '其他兴趣课程': '其他兴趣'
+        '其他兴趣课程': '其他兴趣',
+        '计算机类主修课程': '计算机科学',
+        '计算机类课程': '计算机科学',
+        '遥感、地信类主修课程': '遥感与地理信息系统',
+        '地理类主修课程': '地理学',
+        '地理类课程': '地理学',
+        '艺术类课程': '其他兴趣',
+        '遥感与地理信息类课程': '遥感与地理信息',
+        '其它通识课程': '通识课程',
+        '公共课程': '公共课程'
     };
     const metrics = [];
     const courseGroups = [];
@@ -194,9 +206,9 @@ function enhanceAcademicProfile(language) {
         const strong = item.querySelector('strong');
         if (!strong) return;
 
-        const label = strong.textContent.replace(/\s+/g, ' ').trim().replace(/:$/, '').replace(/\uFF1A$/, '');
+        const label = strong.textContent.replace(/\s+/g, ' ').trim().replace(/:$/, '').replace(/：$/, '');
         const text = item.textContent.replace(/\s+/g, ' ').trim();
-        const value = text.replace(strong.textContent, '').replace(/^[:\uFF1A]\s*/, '').trim();
+        const value = text.replace(strong.textContent, '').replace(/^[:：]\s*/, '').trim();
 
         if (metricLabels.has(label)) {
             metrics.push({ label, value });
@@ -206,10 +218,11 @@ function enhanceAcademicProfile(language) {
 
         if (courseLabels[label]) {
             const courses = value
-                .replace(/[.\u3002]$/, '')
-                .split(/[;\uFF1B]/)
+                .replace(/[.。]$/, '')
+                .split(/[;；]/)
                 .map(course => parseCourseWithGrade(course))
-                .filter(course => course.name);
+                .filter(course => course.name)
+                .sort((a, b) => b.score - a.score);
 
             if (courses.length) {
                 courseGroups.push({ title: courseLabels[label], courses });
@@ -226,7 +239,7 @@ function enhanceAcademicProfile(language) {
         metrics.forEach(metric => {
             const card = document.createElement('div');
             card.className = 'academic-metric';
-            card.innerHTML = `<span>${escapeHtml(metric.label)}</span><strong>${escapeHtml(metric.value)}</strong>`;
+            card.innerHTML = '<span>' + escapeHtml(metric.label) + '</span><strong>' + escapeHtml(metric.value) + '</strong>';
             summary.appendChild(card);
         });
 
@@ -240,28 +253,27 @@ function enhanceAcademicProfile(language) {
         courseGroups.forEach(group => {
             const groupNode = document.createElement('section');
             groupNode.className = 'course-group';
-            groupNode.innerHTML = `
-                <div class="course-group-header">
-                    <h5>${escapeHtml(group.title)}</h5>
-                    <span>${escapeHtml(uiText[language].courseCount(group.courses.length))}</span>
-                </div>
-                <div class="course-table" role="table" aria-label="${escapeHtml(group.title)} courses">
-                    <div class="course-row course-row-head" role="row">
-                        <span role="columnheader">${escapeHtml(uiText[language].course)}</span>
-                        <span role="columnheader">${escapeHtml(uiText[language].score)}</span>
-                    </div>
-                </div>
-            `;
+            groupNode.innerHTML =
+                '<div class="course-group-header">' +
+                    '<h5>' + escapeHtml(group.title) + '</h5>' +
+                    '<span>' + escapeHtml(uiText[language].courseCount(group.courses.length)) + '</span>' +
+                '</div>' +
+                '<div class="course-table" role="table" aria-label="' + escapeHtml(group.title) + ' courses">' +
+                    '<div class="course-row course-row-head" role="row">' +
+                        '<span role="columnheader">' + escapeHtml(uiText[language].course) + '</span>' +
+                        '<span role="columnheader">' + escapeHtml(uiText[language].score) + '</span>' +
+                    '</div>' +
+                '</div>';
 
             const table = groupNode.querySelector('.course-table');
             group.courses.forEach(course => {
                 const row = document.createElement('div');
-                row.className = `course-row${course.grade ? '' : ' course-row-missing-grade'}`;
+                const colorClass = course.grade ? gradeClass(course.score) : '';
+                row.className = 'course-row' + (course.grade ? '' : ' course-row-missing-grade');
                 row.setAttribute('role', 'row');
-                row.innerHTML = `
-                    <span class="course-name" role="cell">${escapeHtml(course.name)}</span>
-                    <span class="course-score" role="cell">${escapeHtml(course.grade || '--')}</span>
-                `;
+                row.innerHTML =
+                    '<span class="course-name" role="cell">' + escapeHtml(course.name) + '</span>' +
+                    '<span class="course-score ' + colorClass + '" role="cell">' + escapeHtml(course.grade || '--') + '</span>';
                 table.appendChild(row);
             });
 
@@ -274,19 +286,36 @@ function enhanceAcademicProfile(language) {
 
 function parseCourseWithGrade(rawCourse) {
     const normalized = rawCourse.replace(/\s+/g, ' ').trim();
-    if (!normalized) return { name: '', grade: '' };
+    if (!normalized) return { name: '', grade: '', score: -1 };
 
-    const parenMatch = normalized.match(/^(.+?)\s*[\uFF08(]\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)\s*[\uFF09)]$/i);
+    const parenMatch = normalized.match(/^(.+?)\s*[（(]\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)\s*[）)]$/i);
     if (parenMatch) {
-        return { name: parenMatch[1].trim(), grade: parifyGrade(parenMatch[2]) };
+        const grade = parifyGrade(parenMatch[2]);
+        return { name: parenMatch[1].trim(), grade, score: scoreFromGrade(grade) };
     }
 
-    const separatorMatch = normalized.match(/^(.+?)\s+(?:-|--|:|\uFF1A)\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)$/i);
+    const separatorMatch = normalized.match(/^(.+?)\s+(?:-|--|:|：)\s*([A-F][+-]?|P|Pass|[0-9]{1,3}(?:\.[0-9]+)?(?:\/100)?)$/i);
     if (separatorMatch) {
-        return { name: separatorMatch[1].trim(), grade: parifyGrade(separatorMatch[2]) };
+        const grade = parifyGrade(separatorMatch[2]);
+        return { name: separatorMatch[1].trim(), grade, score: scoreFromGrade(grade) };
     }
 
-    return { name: normalized, grade: '' };
+    return { name: normalized, grade: '', score: -1 };
+}
+
+function scoreFromGrade(grade) {
+    if (!grade) return -1;
+    const match = grade.match(/(\d+)(?:\/100)?/);
+    return match ? parseInt(match[1], 10) : -1;
+}
+
+function gradeClass(score) {
+    if (score >= 90) return 'course-score-grade-a';
+    if (score >= 85) return 'course-score-grade-b';
+    if (score >= 82) return 'course-score-grade-c';
+    if (score >= 78) return 'course-score-grade-d';
+    if (score >= 75) return 'course-score-grade-e';
+    return '';
 }
 
 function parifyGrade(grade) {
