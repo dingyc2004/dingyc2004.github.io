@@ -86,9 +86,11 @@ The full score statistics are also available as a spreadsheet: [考试成绩统�
 | Ideology, Morality and Rule of Law | 90 |
 | College Communicative English 3 | 86 |
 
-## M.S. (2027 – Future)
+## M.S., Peking University (2027 – 2030, Admitted)
 
-To be determined — updates coming soon.
+**Territorial Spatial Planning**, School of Urban Planning and Design
+
+- **Advisor**: Assistant Professor Haoran Zhang (张浩然)
 
 ## D.E. (Future)
 

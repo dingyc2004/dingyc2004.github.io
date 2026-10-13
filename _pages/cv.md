@@ -11,6 +11,8 @@ redirect_from:
 
 Education
 ======
+* M.S. in Territorial Spatial Planning, Peking University, 2027 – 2030 (Admitted)
+  * Advisor: Assistant Professor Haoran Zhang
 * B.E. in Spatial Informatics & Digitalized Technology (Experimental Class), Wuhan University, 2023 – 2027
   * GPA: 3.86/4 · Average Score: 90.83/100 · Ranking: 2/30
   * See the [Education page](/education/) for full course details and transcripts

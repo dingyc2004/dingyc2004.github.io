@@ -7,12 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a junior undergraduate student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (**Experimental Class**). I am currently seeking possible opportunities to pursue a direct doctoral or master's degree.
+I am a senior undergraduate student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (**Experimental Class**). I have been admitted to the M.S. program in Territorial Spatial Planning at the School of Urban Planning and Design, Peking University, starting in 2027.
 
 <code>dingyichen@whu.edu.cn</code> / <code>dingyc2004@gmail.com</code>
 
 ## Education
 
+- **M.S. (Admitted)**, Territorial Spatial Planning, **Peking University**, 2027 – 2030
 - **B.E.**, Spatial Informatics & Digitalized Technology (Experimental Class), **Wuhan University**, 2023 – 2027 — [details & transcripts](/education/)
 
 ## Research Interests
