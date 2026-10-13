@@ -1,0 +1,15 @@
+---
+permalink: /awards/
+title: "Awards"
+author_profile: true
+---
+
+- National Gold Award of China International College Students' Innovation Competition, 2024.
+- National Gold Award of China Youth Volunteer Service Social Entrepreneurship Competition, 2024.
+- National Third Prize of China's Innovation Challenge on Artificial Intelligence Application Scene, 2025.
+- National Third Prize of Robocup, 2026.
+- Provincial First Prize & Second Prize of Chinese Collegiate Computing Competition, 2026.
+- Top 10 Outstanding Students (group) of Wuhan University, 2024.
+- Three Good Student and First Prize Scholarship of Wuhan University, 2023-2024 & 2024-2025.
+
+[中文版荣誉](/zh/awards/)

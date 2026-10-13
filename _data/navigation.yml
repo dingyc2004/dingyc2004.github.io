@@ -4,27 +4,50 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# The site is bilingual: `main` holds the English menu (shown on pages without
+# `lang: zh` in their front matter) and `zh` holds the Chinese menu (shown on
+# pages with `lang: zh`).
 
 main:
+  - title: "Education"
+    url: /education/
+
+  - title: "Experience"
+    url: /experience/
+
+  - title: "Projects"
+    url: /portfolio/
+
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Awards"
+    url: /awards/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  - title: "中文"
+    url: /zh/
+
+zh:
+  - title: "教育经历"
+    url: /zh/education/
+
+  - title: "实习经历"
+    url: /zh/experience/
+
+  - title: "项目"
+    url: /zh/projects/
+
+  - title: "论文"
+    url: /zh/publications/
+
+  - title: "荣誉"
+    url: /zh/awards/
+
+  - title: "简历"
+    url: /zh/cv/
+
+  - title: "English"
+    url: /
