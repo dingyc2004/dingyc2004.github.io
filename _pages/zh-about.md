@@ -5,7 +5,7 @@ author_profile: true
 lang: zh
 ---
 
-我是武汉大学遥感信息工程学院空间信息与数字技术（**试验班**）专业本科四年级学生，已推免至北京大学城市规划与设计学院，将于2027年入学攻读国土空间规划专业理学硕士。
+我是武汉大学遥感信息工程学院2023级本科生，就读于空间信息与数字技术（**试验班**），我将于2027年入学北京大学城市规划与设计学院硕士研究生，就读国土空间规划。
 
 <code>dingyichen@whu.edu.cn</code> / <code>dingyc2004@gmail.com</code>
 
@@ -16,16 +16,17 @@ lang: zh
 
 ## 研究兴趣
 
+- 能源与交通
 - 遥感与地理信息系统
-- 交通与能源
-- 农业
-- 时空数据挖掘与计量
+- 智慧城市与大数据
+- 计算机与AI
 
 ## 技能
 
-- **编程语言**：C++、Python、MATLAB
-- **软件与平台**：ArcGIS、QGIS、Google Earth Engine、Agisoft Metashape、SuperMap
-- **其他技能**：前后端开发、OpenGL、并行计算、软件工程、MongoDB、PostGIS、Spark、Hadoop
+- AI
+- 高性能计算
+- 软件工程
+- 时空数据挖掘
 
 ## 荣誉（部分）
 

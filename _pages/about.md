@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior undergraduate student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (**Experimental Class**). I have been admitted to the M.S. program in Territorial Spatial Planning at the School of Urban Planning and Design, Peking University, starting in 2027.
+I am a 2023-cohort undergraduate student at the School of Remote Sensing and Information Engineering, Wuhan University, majoring in Spatial Informatics & Digitalized Technology (**Experimental Class**). I will enroll in the M.S. program in Territorial Spatial Planning at the School of Urban Planning and Design, Peking University, in 2027.
 
 <code>dingyichen@whu.edu.cn</code> / <code>dingyc2004@gmail.com</code>
 
@@ -18,16 +18,17 @@ I am a senior undergraduate student at the School of Remote Sensing and Informat
 
 ## Research Interests
 
+- Energy & Transportation
 - Remote Sensing & GIS
-- Transportation and Energy
-- Agriculture
-- Quantitative Geography & Spatio-temporal Data Mining
+- Smart Cities & Big Data
+- Computing & AI
 
 ## Skills
 
-- **Programming languages**: C++, Python, MATLAB
-- **Software & platforms**: ArcGIS, QGIS, Google Earth Engine, Agisoft Metashape, SuperMap
-- **Other**: front-end & back-end development, OpenGL, parallel computing, software engineering, MongoDB, PostGIS, Spark, Hadoop
+- AI
+- High-Performance Computing
+- Software Engineering
+- Spatio-temporal Data Mining
 
 ## Selected Awards
 
