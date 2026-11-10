@@ -10,8 +10,8 @@ redirect_from:
 
 **Spatial Informatics & Digitalized Technology (Experimental Class)**, School of Remote Sensing and Information Engineering
 
-- **GPA**: 3.86/4
-- **Average Score**: 90.83/100
+- **GPA**: 3.88/4
+- **Average Score**: 91.14/100
 - **Ranking**: 2/30
 
 ### Main Courses & Scores
